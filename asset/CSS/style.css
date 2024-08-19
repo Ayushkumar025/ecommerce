@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn{
+    padding: .5rem  1rem;
+    background: skyblue;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+/* navbar */
+/* nav-top */
+.navbar{
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+.navbar .nav-top{
+    background-color:gray;
+    color:black;
+    text-align: center;
+
+}
+
+.navbar .nav-top span{
+    background-color: wheat;
+}
+
+/* nav-bottom */
+.navbar .nav-bottom{
+    background-color: white;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.navbar .nav-bottom .logo .logo-text {
+    color: black;
+}
+
+/* .navbar .nav-bottom .logo .logo-text span{
+    color: rgb(231, 248, 255);
+} */
+
+.navbar .nav-bottom .options{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: large;
+}
+
+.navbar .nav-bottom .options li a:hover{
+    color: red;
+}
+
+/* slider-content */
+.slider-content{
+    display: flex;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.slider-content .content{
+    text-align: justify;
+    font-size: large;
+    padding: 0 20px;
+}
+
+.slider-content .content .shop-now{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly   ;
+}
+
+.slider-content .content .shop-now a:hover{
+    background: rgb(1, 53, 73);
+    color: white;
+}
+
+.slider-content .image img{
+    width: 100%;
+    height: auto;
+}
+
+/* side-bar */
+.side-bar{
+    background: white;
+    border: 1px solid rgb(29, 28, 28);
+}
+.side-bar .types{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    font-size: large;
+}
+
+.side-bar .types li a:hover{
+    color: red;
+}
+
+/* popular-product-lists */
+.popular .heading{
+    text-align: center;
+}
+
+.popular .container{
+    padding: 30px 30px;
+}
+
+.popular .container .top-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.popular .container .bottom-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* recent-posts */
+.new-arrivals .recents{
+    text-align: center;
+}
+
+.new-arrivals .recents .part-i{
+    color: rgb(7, 69, 110);
+}
+
+.new-arrivals .container{
+    padding: 30px 30px;
+}
+
+.new-arrivals .container .top-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.new-arrivals .container .bottom-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* user-testimonials */
+.user .head{
+    text-align: center;
+}
+
+.user .head h1 span{
+    color: rgb(238, 157, 5);
+}
+
+.user .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 50px 50px;
+}
+
+.user .container .testimonials{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px 50px;
+}
+
+.user .container .testimonials img{
+    border-radius: 10px;
+}
+
+/* do's and don't*/
+.Container{
+    position: relative;
+}
+
+.Container .text{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+
+}
+
+/* footer */
+.footer{
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
