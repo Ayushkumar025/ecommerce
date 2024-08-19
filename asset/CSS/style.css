@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Edu VIC WA NT Beginner", cursive;
 }
 
 a{
@@ -25,14 +26,14 @@ a{
     left: 0;
 }
 .navbar .nav-top{
-    background-color:gray;
-    color:black;
+    background-color:black;
+    color:white;
     text-align: center;
 
 }
 
 .navbar .nav-top span{
-    background-color: wheat;
+    color: gold;
 }
 
 /* nav-bottom */
@@ -68,30 +69,31 @@ a{
 /* slider-content */
 .slider-content{
     display: flex;
+    flex-wrap: wrap;
     background-color: whitesmoke;
     align-items: center;
 }
 
-.slider-content .content{
+.slider-content .text{
     text-align: justify;
     font-size: large;
     padding: 0 20px;
 }
 
-.slider-content .content .shop-now{
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly   ;
+.slider-content .text a{
+    padding: .5rem 1rem;
+    background: gold;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    margin-top: 20px;
 }
 
-.slider-content .content .shop-now a:hover{
-    background: rgb(1, 53, 73);
-    color: white;
+.slider-content .text a:hover{
+    background: goldenrod;
 }
 
-.slider-content .image img{
-    width: 100%;
-    height: auto;
+.slider-content img{
+    align-items: center;
 }
 
 /* side-bar */
