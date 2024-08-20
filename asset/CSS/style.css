@@ -21,9 +21,10 @@ a{
 /* navbar */
 /* nav-top */
 .navbar{
-    position: fixed;
+    position: sticky;
     right: 0;
     left: 0;
+    
 }
 .navbar .nav-top{
     background-color:black;
@@ -50,9 +51,9 @@ a{
     color: black;
 }
 
-/* .navbar .nav-bottom .logo .logo-text span{
-    color: rgb(231, 248, 255);
-} */
+.navbar .nav-bottom .logo .logo-text span{
+    color: rgb(238, 157, 5);
+}
 
 .navbar .nav-bottom .options{
     display: flex;
@@ -120,7 +121,7 @@ a{
 }
 
 .popular .container{
-    padding: 30px 30px;
+    padding: 42px;
 }
 
 .popular .container .top-container{
@@ -145,7 +146,7 @@ a{
 }
 
 .new-arrivals .container{
-    padding: 30px 30px;
+    padding: 42px;
 }
 
 .new-arrivals .container .top-container{
@@ -205,4 +206,86 @@ a{
     background-color: gray;
     color: white;
     text-align: center;
+}
+
+@media all and (max-width: 500px) {
+    /* slider-content */
+    .slider-content{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: whitesmoke;
+        align-items: center;
+    }
+
+    .slider-content .text{
+        text-align: justify;
+        font-size: large;
+        padding: 0 20px;
+    }
+
+    .slider-content .text a{
+        padding: .5rem 1rem;
+        background: gold;
+        border: 1px solid transparent;
+        border-radius: .5rem;
+        margin-top: 20px;
+    }
+
+    .slider-content .text a:hover{
+        background: goldenrod;
+    }
+
+    .slider-content img{
+        align-items: center;
+        width: 400px;
+    }
+
+    
+    /* user-testimonials */
+    .user .head{
+        text-align: center;
+    }
+    
+    .user .head h1 span{
+        color: rgb(238, 157, 5);
+    }
+    
+    .user .container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 50px;
+    }
+    
+    .user .container .testimonials{
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 20px 50px;
+    }
+    
+    .user .container .testimonials img{
+        border-radius: 10px;
+    }
+
+    /* do's and don't */
+    .Container{
+        position: relative;
+    }
+    
+    .Container .text{
+        position: absolute;
+        top: 8%;
+        left: 20%;
+    }
+
+    .Container img{
+        width: 400px;
+    }
+
+    /* footer */
+    .footer{
+        background-color: gray;
+        color: white;
+        text-align: center;
+    }
 }
