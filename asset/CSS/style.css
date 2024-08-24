@@ -21,16 +21,12 @@ a{
 /* navbar */
 /* nav-top */
 .navbar{
-    position: sticky;
-    right: 0;
-    left: 0;
-    
+    width: 100%;
 }
 .navbar .nav-top{
     background-color:black;
     color:white;
     text-align: center;
-
 }
 
 .navbar .nav-top span{
@@ -100,7 +96,8 @@ a{
 /* side-bar */
 .side-bar{
     background: white;
-    border: 1px solid rgb(29, 28, 28);
+    /* border: 1px solid rgb(29, 28, 28); */
+    margin-top: 10px;
 }
 .side-bar .types{
     display: flex;
@@ -108,7 +105,7 @@ a{
     list-style: none;
     justify-content: space-around;
     width: 100%;
-    font-size: large;
+    font-size: 25px;
 }
 
 .side-bar .types li a:hover{
@@ -118,6 +115,7 @@ a{
 /* popular-product-lists */
 .popular .heading{
     text-align: center;
+    margin-top: 10px;
 }
 
 .popular .container{
@@ -242,31 +240,16 @@ a{
 
     
     /* user-testimonials */
-    .user .head{
-        text-align: center;
-    }
-    
-    .user .head h1 span{
-        color: rgb(238, 157, 5);
-    }
-    
     .user .container{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 50px 50px;
-    }
-    
-    .user .container .testimonials{
-        border: 1px solid black;
-        border-radius: 10px;
-        padding: 20px 50px;
-    }
-    
-    .user .container .testimonials img{
-        border-radius: 10px;
+        display: inline-block;
+
     }
 
+    .user .container .testimonials img{
+        width: 100%;
+        height: auto;
+    }
+    
     /* do's and don't */
     .Container{
         position: relative;
@@ -288,4 +271,104 @@ a{
         color: white;
         text-align: center;
     }
+}
+
+@media all and (min-width:501px ) and (max-width: 800px) {
+    /* slider-content */
+    .slider-content{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: whitesmoke;
+        align-items: center;
+    }
+
+    .slider-content .text{
+        text-align: justify;
+        font-size: large;
+        padding: 0 20px;
+    }
+
+    .slider-content .text a{
+        padding: .5rem 1rem;
+        background: gold;
+        border: 1px solid transparent;
+        border-radius: .5rem;
+        margin-top: 20px;
+    }
+
+    .slider-content .text a:hover{
+        background: goldenrod;
+    }
+
+    .slider-content img{
+        align-items: center;
+        width: 400px;
+    }
+
+    
+    /* user-testimonials */
+    
+    .user .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        max-width: 100%;
+
+    }
+
+    .user .container .testimonials img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* do's and don't */
+    .Container{
+        position: relative;
+    }
+    
+    .Container .text{
+        position: absolute;
+        top: 8%;
+        left: 20%;
+    }
+
+    .Container img{
+        width: 400px;
+    }
+}
+
+@media all and (min-width:801px ) and (max-width: 1300px) {
+
+    /* user-testimonials */
+    
+    .user .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        max-width: 100%;
+
+    }
+
+    .user .container .testimonials img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* do's and don't */
+    .Container{
+        position: relative;
+    }
+    
+    .Container .text{
+        position: absolute;
+        top: 8%;
+        left: 20%;
+    }
+
+    .Container img{
+        width: 400px;
+    }
+
 }
