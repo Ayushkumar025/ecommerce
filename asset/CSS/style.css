@@ -122,6 +122,10 @@ a{
     padding: 42px;
 }
 
+.popular .container .posts{
+    margin-bottom: 20px;
+}
+
 .popular .container .top-container{
     display: flex;
     flex-wrap: wrap;
@@ -137,6 +141,10 @@ a{
 /* recent-posts */
 .new-arrivals .recents{
     text-align: center;
+}
+
+.new-arrivals .container .posts{
+    margin-bottom: 20px;
 }
 
 .new-arrivals .recents .part-i{
@@ -238,7 +246,44 @@ a{
         width: 400px;
     }
 
+    /*popular posts */
+    .popular .container .top-container{
+        display: inline-block;
+    }
     
+    .popular .container .top-container .posts img{
+        width: 100%;
+        height: auto;
+    }
+
+    .popular .container .bottom-container{
+        display: inline-block;
+    }
+    
+    .popular .container .bottom-container .posts img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* recent posts */
+    .new-arrivals .container .top-container{
+        display: inline-block;
+    }
+
+    .new-arrivals .container .top-container .posts img{
+        width: 100%;
+        height: auto;
+    }
+
+    .new-arrivals .container .bottom-container{
+        display: inline-block;
+    }
+
+    .new-arrivals .container .bottom-container .posts img{
+        width: 100%;
+        height: auto;
+    }
+
     /* user-testimonials */
     .user .container{
         display: inline-block;
