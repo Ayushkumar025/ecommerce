@@ -299,11 +299,13 @@ a{
     .Container{
         position: relative;
     }
-    
+
     .Container .text{
+        font-size: small;
         position: absolute;
-        top: 8%;
+        top: 8%; 
         left: 20%;
+        
     }
 
     .Container img{
