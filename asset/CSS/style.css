@@ -287,7 +287,6 @@ a{
     /* user-testimonials */
     .user .container{
         display: inline-block;
-
     }
 
     .user .container .testimonials img{
@@ -352,6 +351,33 @@ a{
         width: 400px;
     }
 
+    /* popular-posts */
+    .popular .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        max-width: 100%;
+    }
+
+    .popular .container .posts img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* recent-posts */
+    .new-arrivals .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        max-width: 100%;
+    }
+
+    .new-arrivals .container .posts img{
+        width: 100%;
+        height: auto;
+    }
     
     /* user-testimonials */
     
@@ -387,8 +413,51 @@ a{
 
 @media all and (min-width:801px ) and (max-width: 1300px) {
 
-    /* user-testimonials */
+    /* popular-posts */
+    .popular .container .top-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        max-width: 100%;
+    }
     
+    .popular .container .bottom-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        max-width: 100%;
+    }
+
+    .popular .container .posts img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* recent-posts */
+    .new-arrivals .container .top-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        max-width: 100%;
+    }
+
+    .new-arrivals .container .bottom-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        max-width: 100%;
+    }
+
+    .new-arrivals .container .posts img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* user-testimonials */
     .user .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -418,4 +487,10 @@ a{
         width: 400px;
     }
 
+    /* footer */
+    .footer{
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
 }
